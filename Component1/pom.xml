@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.tw</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.1-SNAPSHOT</version>
+	<name>Parent of A and B</name>
+	<packaging>pom</packaging>
+	<modules>
+		<module>A</module>
+		<module>B</module>
+		<module>C</module>
+	</modules>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.8.2</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshot.repo</id>
+			<name>Test release repository</name>
+			<url>file:///tmp/test-snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>release.repo</id>
+			<name>Test Release Repository</name>
+			<url>file:///tmp/test-releases</url>
+		</repository>
+	</distributionManagement>
+</project>
