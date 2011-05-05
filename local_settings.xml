@@ -8,9 +8,26 @@
 			</activation>
 			<properties>
 				<grandparent.version>9.9.9</grandparent.version>
-				<A.A.version>1.9.1</A.A.version>
-				<A.A.version_range>[1.9.1,1.9.2)</A.A.version_range>
+				<component1.version>1.0.0</component1.version>
+				<component1.a.version>1.0.0</component1.a.version>
+				<component1.a.version_range>[1.0.0,1.0.1)</component1.a.version_range>
+				<component1.b.version>1.0.0</component1.b.version>
+				<component1.b.version_range>[1.0.0,1.0.1)</component1.b.version_range>
+				<component1.c.version>1.0.0</component1.c.version>
+				<component1.c.version_range>[1.0.0,1.0.1)</component1.c.version_range>
 			</properties>
 		</profile>
 	</profiles>
+	
+	<dependency>
+    <groupId>com.tw.maven_demo.component1</groupId>
+    <artifactId>a</artifactId>
+    <version>${component1.a.version}</version>
+  </dependency>
+  <dependency>
+    <groupId>com.tw.maven_demo.component1</groupId>
+    <artifactId>b</artifactId>
+    <version>${component1.b.version}</version>
+  </dependency>
+  
 </settings>

@@ -12,6 +12,7 @@
     <module>D</module>
     <module>E</module>
     <module>F</module>
+    <module>G</module>
   </modules>
 
   <dependencyManagement>
@@ -23,5 +24,18 @@
 	    </dependency>
 	  </dependencies>
   </dependencyManagement>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshot.repo</id>
+			<name>Test release repository</name>
+			<url>file:///tmp/test-snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>release.repo</id>
+			<name>Test Release Repository</name>
+			<url>file:///tmp/test-releases</url>
+		</repository>
+	</distributionManagement>
 
 </project>

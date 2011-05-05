@@ -52,4 +52,6 @@ Problems
 
 Transitive dependencies? 
 Parents of parents? (see photo)
+Only propagates properties one step
 
+Release on Steroids only works if the magic is added to every POM. This is because the variable substitution happens too early and the local paths get added to the POM. That means that child POMS do not then get the correct local paths.
