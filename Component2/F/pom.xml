@@ -18,10 +18,10 @@
   <dependencies>
 
     <dependency>
-      <groupId>com.tw</groupId>
+      <groupId>Component1</groupId>
       <artifactId>A</artifactId>
       <scope>compile</scope>
-    <version>${A:A:version_range}</version>
+    <version>${Component1.A.version_range}</version>
     </dependency>
     <dependency>
       <groupId>com.tw</groupId>

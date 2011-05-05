@@ -8,9 +8,9 @@
     <version>1.1-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.tw</groupId>
+  <groupId>Component1</groupId>
   <artifactId>A</artifactId>
-  <version>${A:A:version}</version>
+  <version>${Component1.A.version}</version>
   <packaging>jar</packaging>
 
   <name>A</name>
