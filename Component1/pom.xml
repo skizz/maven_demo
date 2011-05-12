@@ -4,7 +4,7 @@
 	
 	<groupId>com.tw.maven_demo.component1</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.0</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>Component1</name>
 	<packaging>pom</packaging>
 	

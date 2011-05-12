@@ -3,14 +3,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>parent</artifactId>
     <groupId>com.tw.maven_demo.component1</groupId>
-    <version>1.0</version>
+    <artifactId>parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+	<relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>com.tw.maven_demo.component1</groupId>
   <artifactId>b</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>B</name>
 
