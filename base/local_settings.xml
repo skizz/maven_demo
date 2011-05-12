@@ -1,33 +1,4 @@
 <?xml version="1.0"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0                       http://maven.apache.org/xsd/settings-1.0.0.xsd">
-	<profiles>
-		<profile>
-			<id>test</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<grandparent.version>9.9.9</grandparent.version>
-				<component1.version>1.0.0</component1.version>
-				<component1.a.version>1.0.0</component1.a.version>
-				<component1.a.version_range>[1.0.0,1.0.1)</component1.a.version_range>
-				<component1.b.version>1.0.0</component1.b.version>
-				<component1.b.version_range>[1.0.0,1.0.1)</component1.b.version_range>
-				<component1.c.version>1.0.0</component1.c.version>
-				<component1.c.version_range>[1.0.0,1.0.1)</component1.c.version_range>
-			</properties>
-		</profile>
-	</profiles>
-	
-	<dependency>
-    <groupId>com.tw.maven_demo.component1</groupId>
-    <artifactId>a</artifactId>
-    <version>${component1.a.version}</version>
-  </dependency>
-  <dependency>
-    <groupId>com.tw.maven_demo.component1</groupId>
-    <artifactId>b</artifactId>
-    <version>${component1.b.version}</version>
-  </dependency>
-  
+		
 </settings>

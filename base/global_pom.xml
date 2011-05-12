@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-	<parent>
-		<groupId>com.tw.maven_demo</groupId>
-		<artifactId>global</artifactId>
-		<version>1.0</version>
-		<relativePath>global_pom.xml</relativePath>
-	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tw.maven_demo</groupId>
-	<artifactId>aggregator</artifactId>
+	<artifactId>global</artifactId>
 	<version>1.0</version>
-	
-	<name>Aggregator</name>
 	<packaging>pom</packaging>
-	<modules>
-		<module>Component1</module>
-		<module>Component2</module>
-	</modules>
-	
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshot.repo</id>
+			<name>Test release repository</name>
+			<url>file:///tmp/test-snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>release.repo</id>
+			<name>Test Release Repository</name>
+			<url>file:///tmp/test-releases</url>
+		</repository>
+	</distributionManagement>
 </project>

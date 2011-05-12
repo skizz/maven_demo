@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.tw</groupId>
-  <artifactId>Component2</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <name>Component 2</name>
-  <packaging>pom</packaging>
-
-  <modules>
-    <module>D</module>
-    <module>E</module>
-    <module>F</module>
-    <module>G</module>
-  </modules>
-
-  <dependencyManagement>
-  	  <dependencies>
-	    <dependency>
-	      <groupId>junit</groupId>
-	      <artifactId>junit</artifactId>
-	      <version>4.8.2</version>
-	    </dependency>
-	  </dependencies>
-  </dependencyManagement>
-
-	<!-- <distributionManagement>
-		<snapshotRepository>
-			<id>snapshot.repo</id>
-			<name>Test release repository</name>
-			<url>file:///tmp/test-snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>release.repo</id>
-			<name>Test Release Repository</name>
-			<url>file:///tmp/test-releases</url>
-		</repository>
-	</distributionManagement> -->
-
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.tw.maven_demo</groupId>
+		<artifactId>global</artifactId>
+		<version>1.0</version>
+		<relativePath>../global_pom.xml</relativePath>
+	</parent>
+	<groupId>com.tw</groupId>
+	<artifactId>Component2</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>Component 2</name>
+	<packaging>pom</packaging>
+	<modules>
+		<module>D</module>
+		<module>E</module>
+		<module>F</module>
+		<module>G</module>
+	</modules>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.8.2</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
