@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.tw.maven_demo.component1</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>Component1</name>
 	<packaging>pom</packaging>
 	<modules>
