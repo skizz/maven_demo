@@ -3,7 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tw.maven_demo</groupId>
 	<artifactId>grandparent</artifactId>
-	<version>${grandparent.version}</version>
+	<version>1.0</version>
+	
 	<name>Parent of Component1 and Component2</name>
 	<packaging>pom</packaging>
 	<modules>

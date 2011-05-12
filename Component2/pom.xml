@@ -25,7 +25,7 @@
 	  </dependencies>
   </dependencyManagement>
 
-	<distributionManagement>
+	<!-- <distributionManagement>
 		<snapshotRepository>
 			<id>snapshot.repo</id>
 			<name>Test release repository</name>
@@ -36,6 +36,6 @@
 			<name>Test Release Repository</name>
 			<url>file:///tmp/test-releases</url>
 		</repository>
-	</distributionManagement>
+	</distributionManagement> -->
 
 </project>

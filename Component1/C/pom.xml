@@ -5,12 +5,12 @@
   <parent>
     <artifactId>parent</artifactId>
     <groupId>com.tw.maven_demo.component1</groupId>
-    <version>${component1.version}</version>
+    <version>1.0</version>
   </parent>
 
   <groupId>com.tw.maven_demo.component1</groupId>
   <artifactId>c</artifactId>
-  <version>${component1.c.version}</version>
+  <version>1.0</version>
   <name>C</name>
 
   <properties>
@@ -23,12 +23,12 @@
 	  <dependency>
 	    <groupId>com.tw.maven_demo.component1</groupId>
 	    <artifactId>a</artifactId>
-	    <version>${component1.a.version}</version>
+	    <version>1.0</version>
 	  </dependency>
 	  <dependency>
 	    <groupId>com.tw.maven_demo.component1</groupId>
 	    <artifactId>b</artifactId>
-	    <version>${component1.b.version}</version>
+	    <version>1.0</version>
 	  </dependency>
 
     <dependency>
