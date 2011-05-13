@@ -263,3 +263,80 @@ Now let's look at Component2. Lots of build dependency problems caused by a mism
 
 The root cause was that the global pom was not properly set up. Releasing this fixed the problem.
 
+Next step - get ready to work on a new release of Component1.
+
+	diff --git a/base/Component1/A/pom.xml b/base/Component1/A/pom.xml
+	index eb225ae..35260ce 100644
+	--- a/base/Component1/A/pom.xml
+	+++ b/base/Component1/A/pom.xml
+	@@ -5,13 +5,13 @@
+	   <parent>
+	     <groupId>com.tw.maven_demo.component1</groupId>
+	     <artifactId>parent</artifactId>
+	-    <version>1.0</version>
+	+    <version>1.0.1-SNAPSHOT</version>
+	 	<relativePath>../pom.xml</relativePath>
+	   </parent>
+ 
+	   <groupId>com.tw.maven_demo.component1</groupId>
+	   <artifactId>a</artifactId>
+	-  <version>1.0</version>
+	+  <version>1.0.1-SNAPSHOT</version>
+	   <packaging>jar</packaging>
+ 
+	   <name>A</name>
+	diff --git a/base/Component1/B/pom.xml b/base/Component1/B/pom.xml
+	index db3f12c..17072c9 100644
+	--- a/base/Component1/B/pom.xml
+	+++ b/base/Component1/B/pom.xml
+	@@ -5,13 +5,13 @@
+	   <parent>
+	     <groupId>com.tw.maven_demo.component1</groupId>
+	     <artifactId>parent</artifactId>
+	-    <version>1.0</version>
+	+    <version>1.0.1-SNAPSHOT</version>
+	 	<relativePath>../pom.xml</relativePath>
+	   </parent>
+ 
+	   <groupId>com.tw.maven_demo.component1</groupId>
+	   <artifactId>b</artifactId>
+	-  <version>1.0</version>
+	+  <version>1.0.1-SNAPSHOT</version>
+	   <packaging>jar</packaging>
+	   <name>B</name>
+ 
+	diff --git a/base/Component1/C/pom.xml b/base/Component1/C/pom.xml
+	index 4df10d2..94acac2 100644
+	--- a/base/Component1/C/pom.xml
+	+++ b/base/Component1/C/pom.xml
+	@@ -6,13 +6,13 @@
+	   <parent>
+	     <groupId>com.tw.maven_demo.component1</groupId>
+	     <artifactId>parent</artifactId>
+	-    <version>1.0</version>
+	+    <version>1.0.1-SNAPSHOT</version>
+	 	<relativePath>../pom.xml</relativePath>
+	   </parent>
+ 
+	   <groupId>com.tw.maven_demo.component1</groupId>
+	   <artifactId>c</artifactId>
+	-  <version>1.0</version>
+	+  <version>1.0.1-SNAPSHOT</version>
+	   <name>C</name>
+ 
+	   <properties>
+	diff --git a/base/Component1/pom.xml b/base/Component1/pom.xml
+	index df48715..182fd71 100644
+	--- a/base/Component1/pom.xml
+	+++ b/base/Component1/pom.xml
+	@@ -9,7 +9,7 @@
+	 	</parent>
+	 	<groupId>com.tw.maven_demo.component1</groupId>
+	 	<artifactId>parent</artifactId>
+	-	<version>1.0</version>
+	+	<version>1.0.1-SNAPSHOT</version>
+	 	<name>Component1</name>
+	 	<packaging>pom</packaging>
+	 	<modules>
+
+

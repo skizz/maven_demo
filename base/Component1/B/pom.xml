@@ -5,13 +5,13 @@
   <parent>
     <groupId>com.tw.maven_demo.component1</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 	<relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>com.tw.maven_demo.component1</groupId>
   <artifactId>b</artifactId>
-  <version>1.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>B</name>
 
