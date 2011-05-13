@@ -1,32 +1,26 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-
-  <parent>
-    <artifactId>parent</artifactId>
-    <groupId>com.tw.maven_demo.component2</groupId>
-    <version>1.0.0</version>
-  </parent>
-
-  <groupId>com.tw.maven_demo.component2</groupId>
-  <artifactId>g</artifactId>
-  <version>1.0.0</version>
-  <name>G</name>
-
-  <dependencies>
-
-    <dependency>
-      <groupId>com.tw.maven_demo.component2</groupId>
-      <artifactId>f</artifactId>
-      <scope>compile</scope>
-      <version>1.0.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>parent</artifactId>
+		<groupId>com.tw.maven_demo.component2</groupId>
+		<version>1.0.1</version>
+	</parent>
+	<groupId>com.tw.maven_demo.component2</groupId>
+	<artifactId>g</artifactId>
+	<name>G</name>
+	<dependencies>
+		<!-- inter-component dependencies are specified using ${project.version} -->
+		<dependency>
+			<groupId>com.tw.maven_demo.component2</groupId>
+			<artifactId>f</artifactId>
+			<scope>compile</scope>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 </project>

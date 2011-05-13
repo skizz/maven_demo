@@ -26,6 +26,7 @@
 			<scope>compile</scope>
 			<version>1.0.1</version>
 		</dependency>
+		<!-- inter-component dependencies are specified using ${project.version} -->
 		<dependency>
 			<groupId>com.tw.maven_demo.component2</groupId>
 			<artifactId>d</artifactId>

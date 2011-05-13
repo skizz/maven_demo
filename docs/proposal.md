@@ -11,3 +11,9 @@ This covers some of the best practices that we have discussed.
 Updated this to match.
 
 Issue: Even if the parent version has been corrected, if one of the child POMs defines an older version, it is that one that is used and not the parent pom without warning. This leads to issues in dependent builds. Maven Enforcer plugin does NOT enforce this.
+
+Developers use the build part of the component for their local work. Build bumps the build part of the component.
+
+* Developer has 1.0.1
+* Build generates 1.1, 1.2, 1.3 ...
+
