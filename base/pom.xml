@@ -5,7 +5,7 @@
 		<groupId>com.tw.maven_demo</groupId>
 		<artifactId>global</artifactId>
 		<version>1.0</version>
-		<relativePath>global_pom.xml</relativePath>
+		<relativePath>global/pom.xml</relativePath>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tw.maven_demo</groupId>

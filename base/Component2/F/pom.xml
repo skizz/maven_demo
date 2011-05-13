@@ -4,40 +4,40 @@
 	<parent>
 		<artifactId>Component2</artifactId>
 		<groupId>com.tw</groupId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
 	<groupId>Component2</groupId>
 	<artifactId>F</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>F</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
-		<!-- <dependency>
+		<dependency>
 			<groupId>com.tw.maven_demo.component1</groupId>
 			<artifactId>a</artifactId>
 			<scope>compile</scope>
-			<version>1.0-SNAPSHOT</version>
+			<version>1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.tw.maven_demo.component1</groupId>
 			<artifactId>b</artifactId>
 			<scope>compile</scope>
-			<version>1.0-SNAPSHOT</version>
-		</dependency> -->
+			<version>1.0</version>
+		</dependency>
 		<dependency>
 			<groupId>com.tw.component2</groupId>
 			<artifactId>D</artifactId>
 			<scope>compile</scope>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.tw.component2</groupId>
 			<artifactId>E</artifactId>
 			<scope>compile</scope>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>

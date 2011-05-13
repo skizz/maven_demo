@@ -5,11 +5,11 @@
   <parent>
     <artifactId>Component2</artifactId>
     <groupId>com.tw</groupId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <groupId>com.tw.component2</groupId>
   <artifactId>D</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>D</name>
   <url>http://maven.apache.org</url>
   <properties>

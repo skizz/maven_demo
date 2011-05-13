@@ -1,4 +1,40 @@
 <?xml version="1.0"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0                       http://maven.apache.org/xsd/settings-1.0.0.xsd">
-		
+	<activeProfiles>
+		<activeProfile>local</activeProfile>
+	</activeProfiles>
+	<profiles>
+		<profile>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<id>local</id>
+			<repositories>
+				<repository>
+					<id>snapshots</id>
+					<url>file:///tmp/test-snapshots</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<updatePolicy>interval:10</updatePolicy>
+					</snapshots>
+					<layout>default</layout>
+				</repository>
+				<repository>
+					<id>releases</id>
+					<url>file:///tmp/test-releases</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+						<updatePolicy>interval:10</updatePolicy>
+					</snapshots>
+					<layout>default</layout>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
 </settings>

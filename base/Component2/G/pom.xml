@@ -6,12 +6,12 @@
   <parent>
     <artifactId>Component2</artifactId>
     <groupId>com.tw</groupId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
 
   <groupId>Component2</groupId>
   <artifactId>G</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>G</name>
 
   <dependencies>
@@ -20,7 +20,7 @@
       <groupId>Component2</groupId>
       <artifactId>F</artifactId>
       <scope>compile</scope>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
     </dependency>
 
     <dependency>
