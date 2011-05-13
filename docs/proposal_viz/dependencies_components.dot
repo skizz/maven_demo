@@ -1,0 +1,23 @@
+digraph RGL__DirectedAdjacencyGraph {
+    Component1 [
+        fontsize = 8,
+        label = Component1
+    ]
+
+    Component2 [
+        fontsize = 8,
+        label = Component2
+    ]
+
+    Component1 -> Component1 [
+        fontsize = 8
+    ]
+
+    Component2 -> Component1 [
+        fontsize = 8
+    ]
+
+    Component2 -> Component2 [
+        fontsize = 8
+    ]
+}

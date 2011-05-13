@@ -1,0 +1,11 @@
+Artifact, Component, Path, Dependents, DependsOn, Instability, Java, Py, Cpp, Total
+com.tw.maven_demo.component1::a, Component1, A, 2, 0, 0.0, 3, 0, 0
+com.tw.maven_demo.component1::b, Component1, B, 2, 0, 0.0, 3, 0, 0
+com.tw.maven_demo.component2::parent, Component2, pom.xml, 0, 0, 0.0, 8, 0, 0
+com.tw.maven_demo.component2::d, Component2, D, 1, 0, 0.0, 2, 0, 0
+com.tw.maven_demo.component1::c, Component1, C, 0, 2, 1.0, 3, 0, 0
+com.tw.maven_demo.component2::e, Component2, E, 1, 0, 0.0, 2, 0, 0
+com.tw.maven_demo.component1::parent, Component1, pom.xml, 0, 0, 0.0, 9, 0, 0
+com.tw.maven_demo.component2::f, Component2, F, 1, 4, 0.8, 2, 0, 0
+com.tw.maven_demo.component2::g, Component2, G, 0, 1, 1.0, 2, 0, 0
+com.tw.maven_demo::global, global, pom.xml, 0, 0, 0.0, 0, 0, 0

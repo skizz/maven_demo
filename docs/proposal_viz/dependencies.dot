@@ -1,0 +1,37 @@
+digraph Dependencies {
+ clusterrank = "local";
+ rankdir = "BT";
+  subgraph cluster_Component1 { label = "Component1"; 
+com_tw_maven_demo_component1__a [label = "com.tw.maven_demo.component1\na\n"];
+com_tw_maven_demo_component1__b [label = "com.tw.maven_demo.component1\nb\n"];
+com_tw_maven_demo_component1__c [label = "com.tw.maven_demo.component1\nc\n"];
+com_tw_maven_demo_component1__parent [label = "com.tw.maven_demo.component1\nparent\n1.0.1"];
+  }
+  subgraph cluster_Component2 { label = "Component2"; 
+com_tw_maven_demo_component2__parent [label = "com.tw.maven_demo.component2\nparent\n1.0.1"];
+com_tw_maven_demo_component2__d [label = "com.tw.maven_demo.component2\nd\n"];
+com_tw_maven_demo_component2__e [label = "com.tw.maven_demo.component2\ne\n"];
+com_tw_maven_demo_component2__f [label = "com.tw.maven_demo.component2\nf\n"];
+com_tw_maven_demo_component2__g [label = "com.tw.maven_demo.component2\ng\n"];
+  }
+  subgraph cluster_global { label = "global"; 
+com_tw_maven_demo__global [label = "com.tw.maven_demo\nglobal\n1.0.1"];
+  }
+  com_tw_maven_demo_component1__c -> com_tw_maven_demo_component1__a;
+  com_tw_maven_demo_component1__c -> com_tw_maven_demo_component1__b;
+  com_tw_maven_demo_component2__f -> com_tw_maven_demo_component1__a;
+  com_tw_maven_demo_component2__f -> com_tw_maven_demo_component1__b;
+  com_tw_maven_demo_component2__f -> com_tw_maven_demo_component2__d;
+  com_tw_maven_demo_component2__f -> com_tw_maven_demo_component2__e;
+  com_tw_maven_demo_component2__g -> com_tw_maven_demo_component2__f;
+  com_tw_maven_demo_component1__a -> com_tw_maven_demo_component1__parent[color = "red"];
+  com_tw_maven_demo_component1__b -> com_tw_maven_demo_component1__parent[color = "red"];
+  com_tw_maven_demo_component2__parent -> com_tw_maven_demo__global[color = "red"];
+  com_tw_maven_demo_component2__d -> com_tw_maven_demo_component2__parent[color = "red"];
+  com_tw_maven_demo_component1__c -> com_tw_maven_demo_component1__parent[color = "red"];
+  com_tw_maven_demo_component2__e -> com_tw_maven_demo_component2__parent[color = "red"];
+  com_tw_maven_demo_component1__parent -> com_tw_maven_demo__global[color = "red"];
+  com_tw_maven_demo_component2__f -> com_tw_maven_demo_component2__parent[color = "red"];
+  com_tw_maven_demo_component2__g -> com_tw_maven_demo_component2__parent[color = "red"];
+  com_tw_maven_demo__global -> __[color = "red"];
+}
