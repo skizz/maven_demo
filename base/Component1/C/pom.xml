@@ -6,13 +6,12 @@
   <parent>
     <groupId>com.tw.maven_demo.component1</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
 	<relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>com.tw.maven_demo.component1</groupId>
   <artifactId>c</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
   <name>C</name>
 
   <properties>
@@ -24,12 +23,12 @@
 	  <dependency>
 	    <groupId>com.tw.maven_demo.component1</groupId>
 	    <artifactId>a</artifactId>
-	    <version>1.0</version>
+	    <version>${project.version}</version>
 	  </dependency>
 	  <dependency>
 	    <groupId>com.tw.maven_demo.component1</groupId>
 	    <artifactId>b</artifactId>
-	    <version>1.0</version>
+	    <version>${project.version}</version>
 	  </dependency>
 
     <dependency>

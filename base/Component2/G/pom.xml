@@ -4,21 +4,21 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>Component2</artifactId>
-    <groupId>com.tw</groupId>
+    <artifactId>parent</artifactId>
+    <groupId>com.tw.maven_demo.component2</groupId>
     <version>1.0.0</version>
   </parent>
 
-  <groupId>Component2</groupId>
-  <artifactId>G</artifactId>
+  <groupId>com.tw.maven_demo.component2</groupId>
+  <artifactId>g</artifactId>
   <version>1.0.0</version>
   <name>G</name>
 
   <dependencies>
 
     <dependency>
-      <groupId>Component2</groupId>
-      <artifactId>F</artifactId>
+      <groupId>com.tw.maven_demo.component2</groupId>
+      <artifactId>f</artifactId>
       <scope>compile</scope>
       <version>1.0.0</version>
     </dependency>

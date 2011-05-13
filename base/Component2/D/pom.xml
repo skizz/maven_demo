@@ -3,13 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>Component2</artifactId>
-    <groupId>com.tw</groupId>
-    <version>1.0.0</version>
+    <groupId>com.tw.maven_demo.component2</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0.1</version>
   </parent>
-  <groupId>com.tw.component2</groupId>
-  <artifactId>D</artifactId>
-  <version>1.0.0</version>
+  <groupId>com.tw.maven_demo.component2</groupId>
+  <artifactId>d</artifactId>
   <name>D</name>
   <url>http://maven.apache.org</url>
   <properties>

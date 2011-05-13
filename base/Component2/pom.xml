@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>com.tw.maven_demo</groupId>
 		<artifactId>global</artifactId>
-		<version>1.0</version>
+		<version>1.0.1</version>
 		<relativePath>../global/pom.xml</relativePath>
 	</parent>
-	<artifactId>Component2</artifactId>
-	<groupId>com.tw</groupId>
-	<version>1.0.0</version>
+	<groupId>com.tw.maven_demo.component2</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.0.1</version>
 	<name>Component 2</name>
 	<packaging>pom</packaging>
 	<modules>
