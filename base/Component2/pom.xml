@@ -19,7 +19,7 @@
 		<module>G</module>
 	</modules>
 	<properties>
-		<com.tw.maven_demo.component1.version>2.1.0</com.tw.maven_demo.component1.version>
+		<com.tw.maven_demo.component1.version>[2.1.0,2.2.0)</com.tw.maven_demo.component1.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
